@@ -1,0 +1,121 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>table</title>
+  <style>/* style.css */
+
+/* Reset default margin and set background */
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #f0f2f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+/* Style the table */
+table {
+  width: 700px;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Caption styling */
+caption {
+  caption-side: top;
+  font-size: 1.8em;
+  font-weight: bold;
+  padding: 12px;
+  color: #333;
+}
+
+/* Header row */
+thead th {
+  background-color: #007acc;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-size: 1.1em;
+}
+
+/* Table cells */
+td, th {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+/* Zebra striping for rows */
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Hover effect */
+tbody tr:hover {
+  background-color: #e6f7ff;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+  <caption>Student details</caption>
+  <table>
+
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>rollno.</th>
+        <th>markss</th>
+      </tr>
+
+    </thead>
+    <tbody>
+      <tr>
+        <td>harry</td>
+        <td>34</td>
+        <td>91</td>
+
+
+      </tr>
+      <tr>
+        <td>rohan</td>
+        <td>4</td>
+        <td>81</td>
+
+
+      </tr>
+      <tr>
+        <td>harry</td>
+        <td colspan="2">34</td>
+
+
+
+      </tr>
+      <tr>
+        <td colspan="3">harry</td>
+        /*ek cell 3 column lega */
+
+
+      </tr>
+      <tr>
+        <td>arpit</td>
+        <td rowspan="2">78</td>
+        /* row span row ko merge kar dega */
+
+
+
+      </tr>
+      <tr>
+        <td>rohan</td>
+        <td>99</td>
+      </tr>
+    </tbody>
+</body>
+
+</html>
