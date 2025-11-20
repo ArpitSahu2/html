@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            function square()
+            {
+                var n=Number(document.getElementById("num").value);
+                var result=n*n;
+                document.getElementBYId("ans").value=result;
+               alert(n*n);
+            }
+            
+        </script>
+    </head>
+    <body>
+        Enter Number:<input type="text" id="num"><br>
+        Square is:<input type="text" id="ans"><br>
+        <input type="button" value="Submit" onclick="square()">
+    </body>
+</html>

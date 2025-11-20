@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Page</title>
+  <link rel="stylesheet" href="sheet.css">
+</head>
+<body>
+  <h1>Welcome to GLA University</h1>
+
+  <p>GLA University, located in Mathura, Uttar Pradesh, is known for its commitment to academic excellence and holistic development. It offers a wide range of undergraduate and postgraduate programs in engineering, management, pharmacy, and more.</p>
+
+  <p>Mathura, the birthplace of Lord Krishna, is a city rich in cultural heritage and spiritual significance. With its ancient temples, vibrant festivals, and serene ghats along the Yamuna River, Mathura offers a unique blend of tradition and modernity.</p>
+
+  <button>Click Me</button>
+</body>
+</html>
