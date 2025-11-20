@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function formvalidation()
+        {
+            var a=document.getElementById("username").value;
+            var b=document.getElementById("passward").value;
+            var c=document.getElementById("email").value;
+            var d=document.getElementById("phone").value;
+            if(a=="" && b=="" && c=="" && d=="")
+                {
+                    alert("All field should not be empty!");
+                    return false;
+                }
+            else if(a=="")
+                {
+                    alert("Name can not be blank");
+                    return false;
+                }
+            else if(b=="")
+            {
+                alert("Passward can not be blank");
+                return false;
+            }
+            else if(c=="")
+            {
+                alert("Email can not be blank");
+                return false;
+            }
+            else if(d=="")
+            {
+                alert("Phone number can not be blank");
+                return false;
+            }
+            else
+                {
+                    alert("Submitted successfully...");
+                    return true;
+                }
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="return formvalidation()" action="form_validation.html">
+        Name: <input type="text" id="username" placeholder="Enter your name"><br><br>
+        Passward:<input type="password" id="passward" placeholder="Enter your passward"><br><br>
+        Email: <input type="email" id="email" placeholder="Enter your email"><br><br>
+        Phone Number: <input type="text" id="phone" placeholder="Enter your phone number"><br><br>
+        <input type="submit">
+        <!-- onclick="formvalidation()" -->
+    </form>
+</body>
+</html>
