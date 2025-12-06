@@ -6,6 +6,7 @@
     <title>Document</title>
     <script>
         function formvalidation()
+         
         {
             var a=document.getElementById("username").value;
             var b=document.getElementById("passward").value;
@@ -13,7 +14,7 @@
             var d=document.getElementById("phone").value;
             if(a=="" && b=="" && c=="" && d=="")
                 {
-                    alert("All field should not be empty!");
+                    alert("All fields should not be empty!");
                     return false;
                 }
             else if(a=="")
@@ -51,7 +52,5 @@
         Email: <input type="email" id="email" placeholder="Enter your email"><br><br>
         Phone Number: <input type="text" id="phone" placeholder="Enter your phone number"><br><br>
         <input type="submit">
-        <!-- onclick="formvalidation()" -->
-    </form>
 </body>
 </html>

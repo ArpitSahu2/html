@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    <title>Simple Interest Calculation</title>
+        <script>
+            function calculateSimpleInterest() {
+                var principal = parseFloat(document.getElementById("principal").value);
+                var rate = parseFloat(document.getElementById("rate").value);
+                var time = parseFloat(document.getElementById("time").value);
+                
+                if (isNaN(principal) || isNaN(rate) || isNaN(time)) {
+                    alert("Please enter valid numbers for principal, rate, and time.");
+                    return;
+                }
+                
+                var simpleInterest = (principal * rate * time) / 100;
+                alert("Simple Interest: " + simpleInterest);
+            }
+        </script>
+
+    </head>
+    <body>
+        <h2>Simple Interest Calculator</h2>
+        <label for="principal">Principal Amount:</label>
+        <input type="text" id="principal" placeholder="Enter principal amount"><br><br>
+        
+        <label for="rate">Rate of Interest (%):</label>
+        <input type="text" id="rate" placeholder="Enter rate of interest"><br><br>
+        
+        <label for="time">Time (years):</label>
+        <input type="text" id="time" placeholder="Enter time in years"><br><br>
+        
+        <button onclick="calculateSimpleInterest()">Calculate Simple Interest</button>
+    </body>
+</html>
