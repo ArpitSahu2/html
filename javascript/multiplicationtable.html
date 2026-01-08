@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multiplication Table of 5</title>
+</head>
+<body>
+  <h2>Multiplication Table of 5</h2>
+  <div id="table"></div>
+
+  <script>
+    // Get the container
+    let container = document.getElementById("table");
+
+    // Loop through numbers 1 to 10
+    for (let i = 1; i <= 10; i++) {
+      // Create a line of the table
+      let line = `5 x ${i} = ${5 * i}`;
+      
+      // Display it inside the div
+      container.innerHTML += line + "<br>";
+    }
+  </script>
+</body>
+</html>
